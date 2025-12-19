@@ -1,1 +1,54 @@
-<h1>Bli medlem</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Råde BMX - Bli medlem</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="Bilder/RaadeBMXLogo.png" alt="Logo til Råde BMX">
+        </a>
+        <div class="hamburgermenu" onClick="toggleMenu()">☰</div>
+
+        <nav id="mobileMenu" class="menu">
+            <a href="#">Hjem</a>
+            <a href="#aktiviteter">Aktiviteter</a>
+            <a href="member.html">Bli medlem</a>
+            <a href="#kontakt">Kontakt oss</a>
+        </nav>
+    </header>
+    <main>
+        <section id="member">
+            <h1>Bli medlem i Råde BMX</h1>
+            <p>Velkommen til Råde BMX! Vi er glade for at du vurderer å bli en del av vår BMX-familie. For å bli medlem, vennligst fyll ut skjemaet nedenfor med dine opplysninger.</p>
+            <form class="membership-form">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Alder:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="experience">Erfaring med BMX:</label>
+                <select id="experience" name="experience">
+                    <option value="">Velg erfaring</option>
+                    <option value="nybegynner">Nybegynner</option>
+                    <option value="noe_erfaring">Noe erfaring</option>
+                    <option value="erfaren">Erfaren</option>
+                    <option value="konkurranse">Konkurranseutøver</option>
+                </select>
+
+
+                <button type="submit" class="memberbutton">Send inn</button>
+        </section>
+    </main>
+</body>
+</html>

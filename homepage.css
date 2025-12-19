@@ -466,6 +466,43 @@ footer {
 
 /* Enkel desktop-tilpasning */
 @media (min-width: 768px) {
+
+    header {
+        margin: 30px auto;
+        max-width: 800px;
+    }
+    
+    main{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header img {
+        max-width: 20%;
+    }
+
+    .info-links {
+        max-width: 600px;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    #mobileMenu a{
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 30px;
+    }
+
+    #teaser p{
+        font-size: 18px;
+    }
+
+    #boldtext {
+        font-size: 32px !important;
+    }
+
   .site-header {
     justify-content: flex-start;
   }
@@ -486,8 +523,24 @@ footer {
     display: none;
   }
 
-  .info-links {
-    max-width: 600px;
-    margin: -60px auto 40px;
+  .why-bmx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
   }
+
+  #map {
+    margin-bottom: 100px;
+  }
+
+  #map iframe {
+    max-width: 800px;
+  }
+
+  .socialmedia{
+    justify-content: space-evenly;
+  }
+
+  
 }
