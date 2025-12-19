@@ -235,8 +235,8 @@ main img {
 }
 
 .carousel-track img {
-  width: 250px;               
-  height: 150px;
+  width: 300px;               
+  height: 250px;
   object-fit: cover;
   border-radius: 6px;
   scroll-snap-align: start;  
@@ -373,6 +373,7 @@ main img {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .send-icon {
@@ -385,7 +386,7 @@ main img {
     display: flex;
     flex-direction: column;   
     align-items: center;      
-    padding: 40px 20px;
+    padding: 40px 5px;
     background: #02150c;
 }
 

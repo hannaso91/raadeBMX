@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Råde BMX – BMX-klubb for barn, ungdom og familier</title>
+    <meta name="description" content="Råde BMX er en inkluderende BMX-klubb for ale aldere. Treningstider, informasjon om medlemskap, kontakt og arena i Råde.">
+    <meta name="keywords" content="Råde BMX, BMX klubb, BMX Råde, sykkel, barn, ungdom, trening, Østfold, BMX, BMX racing, BMX løp, BMX nybegynner, BMX voksen, fellesskap, idrettsglede, BMX arena, medlemskap, kontakt Råde BMX">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SportsActivityLocation",
+            "name": "Råde BMX",
+            "description": "BMX-klubb i Råde med tilbud for barn, ungdom og familier.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Idrettsveien 30",
+                "postalCode": "1640",
+                "addressLocality": "Råde",
+                "addressCountry": "NO"
+            },
+            "telephone": "11111111",
+            "email": "post@rade-bmx.no",
+            "url": "https://vårtdomene.no", 
+            "sameAs": [
+                "https://www.instagram.com/radebmx/",
+                "https://www.facebook.com/groups/157992311030107"
+            ]
+        }
+    </script>
+
     <link rel="stylesheet" href="homepage.css">
-    <title>Document</title>
+</head>
 </head>
 <body>
     <header>
@@ -24,9 +51,9 @@
         </div>
         <section class="info-wrapper">
             <div class="info-links">
-                <a href="#bli-medlem" class="info-item">
+                <a href="member.html" class="info-item">
                     <div class="icon-circle">
-                    <img src="Bilder/group_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="Bli medlem">
+                    <img src="Bilder/group_add_24dp_00953E_FILL0_wght400_GRAD0_opsz24.png" alt="Bli medlem">
                     </div>
                     <span>BLI MEDLEM</span>
                 </a>
@@ -40,7 +67,7 @@
 
                 <a href="#kontakt" class="info-item">
                     <div class="icon-circle">
-                    <img src="Bilder/contact_page_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="Kontakt oss">
+                    <img src="Bilder/contact_page_24dp_00953E_FILL0_wght400_GRAD0_opsz24.png" alt="Kontakt oss">
                     </div>
                     <span>KONTAKT OSS</span>
                 </a>
@@ -59,7 +86,10 @@
                 Leie av sykkel og hjelm koster 50 kr pr gang. 
                 Helhjelm, bukse og genser er påbudt og det er ikke tillatt med annet enn BMX sykkel under trening.
             </p>
-            <button class="memberbutton"><img src="Bilder/group_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="BLI MEDLEM"> BLI MEDLEM</button>
+            <button class="memberbutton" onclick="window.location.href='member.html'">
+                BLI MEDLEM
+            </button>
+
         </section>
         <section class="why-bmx">
             <h2>Hvorfor velge BMX hos oss?</h2>
@@ -125,7 +155,7 @@
         <section id="kontakt" class="contact-section">
             <h2>Kontakt oss</h2>
 
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
                 <!-- Navn -->
                 <div class="form-row">
                     <label for="name">Navn:</label>
@@ -151,10 +181,10 @@
 
                 <!-- Send-knapp -->
                 <div class="send-wrapper">
-                    <button type="submit" class="send-button">
-                        <img src="Bilder/send_icon.png" alt="" class="send-icon">
+                    <a href="mailto:post@rade-bmx.no" class="send-button">
                         SEND MELDING
-                    </button>
+                    </a>
+
                 </div>
             </form>
         </section>
@@ -189,9 +219,8 @@
                 
                 <nav class="footer-menu">
                     <a href="#">Til toppen</a>
-                    <a href="#aktiviteter">Kontakt oss</a>
-                    <a href="#medlemmer">Bli medlem</a>
                     <a href="#kontakt">Kontakt oss</a>
+                    <a href="member.html">Bli medlem</a>
                     <a href="">Klubbinformasjon</a>
                 </nav>
                 <a href="https://www.facebook.com/groups/157992311030107" target="_blank">
