@@ -50,13 +50,7 @@ header img {
   background: #02150c;
 }
 
-.logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); 
-  max-height: 70px;
-}
+
 
 .hamburgermenu{
     font-size: 40px;
@@ -316,6 +310,7 @@ main img {
   text-align: left;           
 }
 
+
 .form-row {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -409,6 +404,11 @@ main img {
     gap: 10px;
     font-size: 18px;
     color: white;
+}
+
+.contactinfo p a {
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .contactinfo img {
@@ -541,6 +541,11 @@ footer {
   .socialmedia{
     justify-content: space-evenly;
   }
+
+  .contatinfo p a {
+    color: white;
+    text-decoration: none;
+}
 
   
 }

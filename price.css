@@ -1,0 +1,78 @@
+.price-section {
+  padding: 60px 20px 80px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.price-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.price-intro {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+}
+
+/* Container for kortene */
+.price-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Selve kortet */
+.price-card {
+  background: #0b2416;
+  border-radius: 12px;
+  padding: 24px 20px 28px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  border-top: 4px solid #00953E;
+  text-align: left;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.price-card h2 {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.price-amount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #EBCB8B;       /* “gullaktig” farge */
+  margin: 0 0 16px;
+}
+
+/* Liste inni kortet */
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-card li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Highlightet kort (f.eks. mest vanlig) */
+.price-card--highlight {
+  border-top-color: #FFD700;   /* sterkere gull */
+  transform: translateY(-4px);
+}
+
+/* Desktop-layout: 3 kort ved siden av hverandre */
+@media (min-width: 768px) {
+  .price-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .price-card {
+    max-width: none;
+  }
+}
