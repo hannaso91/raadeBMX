@@ -467,15 +467,18 @@ footer {
 /* Enkel desktop-tilpasning */
 @media (min-width: 768px) {
 
-    header {
-        margin: 30px auto;
-        max-width: 800px;
+        
+        header {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto 0;
     }
     
-    main{
-        max-width: 800px;
-        margin: 0 auto;
-    }
+
 
     header img {
         max-width: 20%;
@@ -546,6 +549,13 @@ footer {
     color: white;
     text-decoration: none;
 }
+
+header img {
+    width: 160px;   /* juster etter smak: 140–180px */
+    max-width: none;
+    height: auto;
+}
+
 
   
 }
