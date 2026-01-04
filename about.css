@@ -1,0 +1,194 @@
+/* ===== ABOUT / OM OSS ===== */
+.about-section {
+  max-width: 800px;
+  margin: 30px auto 80px;
+  padding: 40px 20px 60px;
+  color: #ffffff;
+}
+
+.about-section h1 {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin: 20px 0 18px;
+}
+
+.about-intro {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 35px 0 12px;
+  text-align: center; 
+  margin-top: 80px;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 16px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Verdier-lista */
+.about-section ul {
+  max-width: 700px;
+  margin: 14px auto 0;
+  padding: 18px 18px;
+  background: #0b2416;              /* samme kort-følelse som pris-kort */
+  border-top: 4px solid #00953E;     /* grønn stripe */
+  border-radius: 12px;
+  list-style: none;
+}
+
+.about-section li {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.about-section li strong {
+  color: #EBCB8B; /* gull-aktig som du bruker på priser */
+}
+
+/* Lenker i teksten */
+a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #EBCB8B;
+  text-underline-offset: 4px;
+}
+
+.about-section a:hover {
+  text-decoration-color: #FFD700;
+}
+
+/* ===== BANEN VÅR ===== */
+.track-section {
+  padding: 0px 20px 90px;
+  background: #02150c;
+  text-align: center;
+}
+
+ h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.track-intro {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Bildegalleri */
+.track-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.track-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.track-gallery img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  scroll-snap-align: start;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease;
+}
+
+.track-gallery img:hover {
+  transform: scale(1.04);
+}
+
+/* ===== STYRET ===== */
+.board-section {
+  padding: 0px 20px 90px;
+  text-align: center;
+}
+
+.board-section h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.board-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.board-card {
+  background: #0b2416;
+  border-radius: 14px;
+  padding: 24px 20px 28px;
+  border-top: 4px solid #00953E;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+}
+
+.board-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+
+.board-card h3 {
+  margin: 6px 0 4px;
+  font-size: 18px;
+}
+
+.board-card .role {
+  color: #EBCB8B;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.board-card .contact {
+  font-size: 14px;
+}
+
+
+/* Litt mer luft på desktop */
+@media (min-width: 768px) {
+  .about-section {
+    padding: 50px 20px 80px;
+  }
+
+  .about-section h1 {
+    font-size: 36px;
+  }
+
+  .about-section h2 {
+    font-size: 28px;
+  }
+  
+  .track-gallery img {
+    width: 360px;
+    height: 220px;
+  }
+
+  .board-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

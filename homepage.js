@@ -1,8 +1,35 @@
-// Denne funksjonen kalles når du klikker på ☰ i HTML-en
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
+  const overlay = document.getElementById("menuOverlay");
+  const hamburger = document.getElementById("hamburgerBtn");
+
+  const isOpen = menu.classList.toggle("show");
+  overlay.classList.toggle("show");
+
+  hamburger.textContent = isOpen ? "✕" : "☰";
 }
+
+
+/* Lukk når man trykker på en lenke */
+document.addEventListener("click", (e) => {
+  const menu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("menuOverlay");
+
+  if (e.target.closest("#mobileMenu a")) {
+    menu.classList.remove("show");
+    overlay.classList.remove("show");
+  }
+});
+
+/* ESC for å lukke */
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    document.getElementById("mobileMenu").classList.remove("show");
+    document.getElementById("menuOverlay").classList.remove("show");
+  }
+});
+
+
 
 // Bare for å sjekke at JS faktisk er koblet til:
 console.log("JS er lastet og klar!");
