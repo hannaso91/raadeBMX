@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Råde BMX – BMX-klubb for barn, ungdom og familier</title>
-    <meta name="description" content="Råde BMX er en inkluderende BMX-klubb for ale aldere. Treningstider, informasjon om medlemskap, kontakt og arena i Råde.">
+    <title>Råde BMX – BMX-klubb for ALLE</title>
+    <meta name="description" content="Råde BMX er en inkluderende BMX-klubb for alle aldere. Treningstider, informasjon om medlemskap, kontakt og arena i Råde.">
     <meta name="keywords" content="Råde BMX, BMX klubb, BMX Råde, sykkel, barn, ungdom, trening, Østfold, BMX, BMX racing, BMX løp, BMX nybegynner, BMX voksen, fellesskap, idrettsglede, BMX arena, medlemskap, kontakt Råde BMX">
 
     <script type="application/ld+json">
@@ -47,6 +47,7 @@
             <a href="https://medlemskap.nif.no/Start/Index/19867?fbclid=IwY2xjawO31LVleHRuA2FlbQIxMABicmlkETBEQktGV2VJRmozZkppMXI5c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHksSsMVMt6hYscW99wcDcQwAc6quCAixQJUzjHDjA9_LetaIx7_GHCCW0mmL_aem_3px9cSfuF9UucefKfjpzqg">Bli medlem</a>
             <a href="#kontakt">Kontakt oss</a>
             <a href="about.html">Klubbinformasjon</a>
+            <a href="">Utleie</a>
         </nav>
     </header>
     <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()"></div>
@@ -121,11 +122,11 @@
         </section>
         <section class="image-carousel">
             <div class="carousel-track">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="" onclick="openLightbox(this)">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="" onclick="openLightbox(this)">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="" onclick="openLightbox(this)">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="" onclick="openLightbox(this)">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="" onclick="openLightbox(this)">
             </div>
         </section>
         <section id="treningstider" class="training-times">
@@ -235,5 +236,8 @@
         <p>© 2025 Råde BMX. Alle rettigheter reservert.</p>
     </footer>
     <script src="homepage.js"></script>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
 </body>
 </html>

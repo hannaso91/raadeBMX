@@ -482,6 +482,7 @@ footer {
   color: #ffffff;
   text-align: center;
   padding-bottom: 30px;
+  margin-top: 40px;
 }
 
 .footer-logo{
@@ -519,53 +520,83 @@ footer {
 }
 
 
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
 
 
 
 
-
-/* Enkel desktop-tilpasning */
 @media (min-width: 768px) {
 
-        
-        header {
-            max-width: 800px;
-            margin: 0 auto;
-            justify-content: space-between;
-        }
 
-        main {
-            max-width: 800px;
-            margin: 30px auto 0;
-    }
-    
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 20px;
+}
+
+header img {
+    height: 70px;
+    width: auto;
+}
 
 
-    header img {
-        max-width: 20%;
-    }
+.menu {
+    display: flex;
+    align-items: center;
 
-    .info-links {
-        max-width: 600px;
-        margin: auto;
-        justify-content: space-between;
-    }
+    /* skyver menyen til høyre */
+    margin-left: auto;
 
-    #mobileMenu a{
-        font-size: 20px;
-    }
+    gap: 32px;              /* kontrollert avstand */
+}
 
-    .menu {
-        gap: 30px;
-    }
+/* MENYLENKER */
+#mobileMenu a {
+    font-size: 18px;
+    white-space: nowrap;    /* hindrer linjeskift */
+}
 
-    #teaser p{
-        font-size: 18px;
-    }
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 30px auto 0;
+}
 
-    #boldtext {
-        font-size: 32px !important;
-    }
+/* INFO-LINKS */
+.info-links {
+    max-width: 600px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* TEASER */
+#teaser p {
+    font-size: 18px;
+}
+
+#boldtext {
+    font-size: 32px;
+}
+
 
   .site-header {
     justify-content: flex-start;

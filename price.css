@@ -32,6 +32,7 @@
   text-align: left;
   max-width: 340px;
   margin: 0 auto;
+  min-width: 340px;
 }
 
 .price-card h2 {
