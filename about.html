@@ -56,10 +56,10 @@
             </p>
 
             <div class="track-gallery">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="Råde BMX bane oversikt">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="BMX ryttere i aksjon på banen">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="Startgrind på Råde BMX Arena">
-                <img src="Bilder/bmx-3522569_640.jpg" alt="Hopp og svinger på BMX banen">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="Råde BMX bane oversikt" onclick="openLightbox(this)">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="BMX ryttere i aksjon på banen" onclick="openLightbox(this)">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="Startgrind på Råde BMX Arena" onclick="openLightbox(this)">
+                <img src="Bilder/bmx-3522569_640.jpg" alt="Hopp og svinger på BMX banen" onclick="openLightbox(this)">
             </div>
         </section>
         <section class="board-section">
@@ -116,6 +116,9 @@
         </div>
         <p>&copy; 2025 Råde BMX. Alle rettigheter reservert.</p>
     </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
     <script src="homepage.js"></script>
 
 </body>
