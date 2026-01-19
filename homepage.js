@@ -10,7 +10,6 @@ function toggleMenu() {
 }
 
 
-/* Lukk når man trykker på en lenke */
 document.addEventListener("click", (e) => {
   const menu = document.getElementById("mobileMenu");
   const overlay = document.getElementById("menuOverlay");
@@ -21,7 +20,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-/* ESC for å lukke */
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     document.getElementById("mobileMenu").classList.remove("show");
@@ -31,13 +29,13 @@ document.addEventListener("keydown", (e) => {
 
 
 
-// Bare for å sjekke at JS faktisk er koblet til:
+
 console.log("JS er lastet og klar!");
 
 
 
 
-// Håndter skjema-innsending
+
 function setupContactForm() {
   const form = document.getElementById("contactForm");
   if (!form) return;
@@ -68,7 +66,7 @@ function setupContactForm() {
   });
 }
 
-// Kjør når siden er lastet
+
 document.addEventListener("DOMContentLoaded", () => {
   setupContactForm();
 });
